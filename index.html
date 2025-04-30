@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Team | Arte Digital</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body class="bg-black text-white min-h-screen">
+    <!-- Header -->
+    <header
+      class="py-6 px-6 md:px-12 border-b border-zinc-900 flex justify-between items-center sticky top-0 bg-black/50 backdrop-blur-xl z-10"
+    >
+      <div class="flex items-center">
+        <div class="flex items-end gap-2">
+          <h1 class="text-2xl md:text-3xl font-bold gradient-text">
+            WAVES CHAD
+          </h1>
+          <h3 class="text-sm -translate-y-1">by Cool Team</h3>
+        </div>
+      </div>
+      <nav>
+        <ul class="flex space-x-8">
+          <li>
+            <a
+              href="#inicio"
+              class="text-zinc-400 hover:text-white transition-colors duration-300"
+            >
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#sobre"
+              class="text-zinc-400 hover:text-white transition-colors duration-300"
+            >
+              Proyecto
+            </a>
+          </li>
+          <li>
+            <a
+              href="#equipo"
+              class="text-zinc-400 hover:text-white transition-colors duration-300"
+            >
+              Equipo
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Canvas -->
+    <section id="inicio" class="p-6 md:p-12 pt-16 md:pt-24">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+          Arte Digital<br />en <span class="gradient-text">Movimiento</span>
+        </h2>
+        <p class="text-zinc-400 max-w-2xl text-lg mb-12">
+          Explora la intersección entre matemáticas y arte a través de ondas
+          sinusoidales interactivas que responden a tu movimiento.
+        </p>
+
+        <div
+          id="canvasContainer"
+          class="w-full aspect-[16/9] mb-8 rounded-xl overflow-hidden border border-zinc-900 shadow-xl shadow-indigo-500/10"
+        ></div>
+
+        <div
+          class="flex items-center justify-start space-x-6 mt-8 mb-16 text-sm text-zinc-500"
+        >
+          <div class="flex items-center">
+            <span
+              class="w-2 h-2 inline-block rounded-full bg-indigo-500 mr-2"
+            ></span>
+            <span>Mouse X: frecuencia</span>
+          </div>
+          <div class="flex items-center">
+            <span
+              class="w-2 h-2 inline-block rounded-full bg-fuchsia-500 mr-2"
+            ></span>
+            <span>Mouse Y: amplitud</span>
+          </div>
+          <div class="flex items-center">
+            <span
+              class="w-2 h-2 inline-block rounded-full bg-rose-500 mr-2"
+            ></span>
+            <span>Click: cambiar colores</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="sobre"
+      class="p-6 md:p-12 py-24 bg-zinc-950 border-y-2 border-white/10"
+    >
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 gradient-text">
+          Sobre el proyecto
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <p class="text-zinc-300 mb-6 text-lg">
+              "Waves Chad" es una exploración del arte generativo que utiliza
+              funciones matemáticas para crear visualizaciones interactivas y
+              dinámicas.
+            </p>
+            <p class="text-zinc-400">
+              Este proyecto muestra cómo podemos transformar conceptos
+              abstractos como las funciones sinusoidales en experiencias
+              visuales impactantes y accesibles.
+            </p>
+          </div>
+          <div>
+            <p class="text-zinc-400 mb-6">
+              Utilizando P5.js, creamos ondas que responden en tiempo real a la
+              interacción del usuario. Cada movimiento del cursor modifica la
+              frecuencia y amplitud de las ondas, creando una pieza única en
+              cada visita.
+            </p>
+            <p class="text-zinc-400">
+              La simplicidad visual contrasta con la complejidad matemática que
+              hay detrás, demostrando cómo la programación creativa puede
+              transformar algoritmos en arte.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipo" class="p-6 md:p-12 py-24">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-16 gradient-text">Nuestro Equipo</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Team Member 1 -->
+          <div
+            class="bg-zinc-950/80 p-6 rounded-lg border-2 border-white/5 hover:border-white/10 hover:bg-zinc-900/50 transition-all duration-300 hover:scale-105 cursor-default"
+          >
+            <div
+              class="w-24 h-24 mb-6 overflow-hidden rounded-lg border border-indigo-500/20"
+            >
+              <img
+                src="/assets/members/alejo.jpg"
+                alt="Alejo Pequeño"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-medium mb-1">Alejo Pequeño</h3>
+            <div class="flex flex-col">
+              <p class="text-white/90 text-sm font-medium">
+                Frontend & Creative Developer
+              </p>
+              <p class="text-zinc-400 mb-4 text-sm">JOYCO Studio</p>
+            </div>
+
+            <p class="text-zinc-400 text-sm">
+              Especialista en frontend y animaciones interactivas. Enfocado en
+              el UX/UI. Stack: Next.js, Tailwind, GSAP, WebGL.
+            </p>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="bg-zinc-950/80 p-6 rounded-lg border-2 border-white/5 hover:border-white/10 hover:bg-zinc-900/50 transition-all duration-300 hover:scale-105 cursor-default"
+          >
+            <div
+              class="w-24 h-24 mb-6 overflow-hidden rounded-lg border border-indigo-500/20"
+            >
+              <img
+                src="/assets/members/rocio.jpeg"
+                alt="Rocio San Roman"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-medium mb-1">Rocio San Roman</h3>
+            <div class="flex flex-col">
+              <p class="text-white/90 text-sm font-medium">UX/UI Designer</p>
+              <p class="text-zinc-400 mb-4 text-sm">Flybondi</p>
+            </div>
+            <p class="text-zinc-400 text-sm">
+              Diseño experiencias digitales centradas en el usuario.
+            </p>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div
+            class="bg-zinc-950/80 p-6 rounded-lg border-2 border-white/5 hover:border-white/10 hover:bg-zinc-900/50 transition-all duration-300 hover:scale-105 cursor-default"
+          >
+            <div
+              class="w-24 h-24 mb-6 overflow-hidden rounded-lg border border-indigo-500/20"
+            >
+              <img
+                src="/assets/members/lourdes.jpeg"
+                alt="Lourdes Lyan Rogora"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-medium mb-1">Lourdes Lyan Rogora</h3>
+            <div class="flex flex-col">
+              <p class="text-white/90 text-sm font-medium">
+                Graphic Designer & UX/UI Specialist
+              </p>
+              <p class="text-zinc-400 mb-4 text-sm">PixelArt</p>
+            </div>
+            <p class="text-zinc-400 text-sm">
+              Convierto conceptos en soluciones visuales que mejoran la
+              usabilidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-6 md:p-12 py-16 bg-zinc-950 border-t-2 border-white/10">
+      <div class="max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h3 class="text-lg font-medium mb-6 text-zinc-300">
+              Datos de la cursada
+            </h3>
+            <ul class="text-zinc-400 space-y-3 text-sm">
+              <li>
+                <span class="text-zinc-500">Carrera:</span> Diseño Multimedial
+              </li>
+              <li>
+                <span class="text-zinc-500">Materia:</span> Diseño y
+                Programación Web I
+              </li>
+              <li><span class="text-zinc-500">Turno:</span> Noche</li>
+              <li><span class="text-zinc-500">Comisión:</span> DWN4AV</li>
+              <li>
+                <span class="text-zinc-500">Docente:</span> Profesor Juan Pérez
+              </li>
+              <li><span class="text-zinc-500">Fecha:</span> Abril 2025</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-12 pt-12 border-t-2 border-white/10 gradient-text text-center text-zinc-600 text-xs"
+        >
+          &copy; 2025 Waves Chad | Todos los derechos reservados | by Cool Team
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script link -->
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
