@@ -97,5 +97,5 @@ let sketch = function (p) {
   };
 };
 
-// Iniciar P5.js
+// Init
 new p5(sketch);
