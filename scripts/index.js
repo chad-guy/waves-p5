@@ -1,6 +1,4 @@
-// P5.js sketch - Versión minimalista moderna
 let sketch = function (p) {
-  // Colores en formato RGB - más saturados y modernos
   const colorPalette = [
     [79, 70, 229], // indigo-600
     [219, 39, 119], // fuchsia-600
@@ -11,7 +9,6 @@ let sketch = function (p) {
   let time = 0;
   let numWaves = 8;
   let colors = [...colorPalette];
-  let currentColor = 0;
 
   p.setup = function () {
     // Crear canvas que se ajuste al contenedor
