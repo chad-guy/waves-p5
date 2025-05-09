@@ -16,15 +16,15 @@ let sketch = function (p) {
     canvas.parent("canvasContainer");
 
     // Configuración inicial
-    p.colorMode(p.RGB);
-    p.background(0);
-    p.noFill();
-    p.strokeWeight(1.5);
+    p.colorMode(p.RGB); // -> RGB
+    p.background(0); // -> Negro
+    p.noFill(); // -> No rellenar
+    p.strokeWeight(1.5); // -> Grosor de trazo
   };
 
   p.draw = function () {
     // Fondo negro sólido en cada frame para eliminar rastros
-    p.background(0);
+    p.background(0); // -> Negro
 
     // Obtener posición relativa del mouse
     let mouseXRatio = p.constrain(p.mouseX / p.width, 0, 1);
